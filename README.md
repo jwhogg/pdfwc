@@ -10,6 +10,16 @@ or on windows:
 `python -m pipx ensurepath`<- restart terminal after this one
 
 #### install pdfwc
-`git clone
+`git clone https://github.com/jwhogg/pdfwc --depth=1`
+`pipx install ./pdfwc/pdfwc`
 
-<img width="1142" height="633" alt="image" src="https://github.com/user-attachments/assets/17708b5f-1b2c-4774-99e7-f5ff855f5f69" />
+### Usage
+`pdfwc my_pdf.pdf`
+- press `space` to toggle the currently highlighed section in the wordcount calculation
+- `a` to toggle all
+- `q` to quit
+
+<img width="1143" height="635" alt="image" src="https://github.com/user-attachments/assets/020b51f3-a8db-40f4-9004-0fedf9fa8329" />
+
+#### Caveats
+This program relies on `PyMuPDF`, so it will not work for pdfs that are pure images, and will struggle when the pdf has no outline / table of contents. Milage may vary.
