@@ -4,13 +4,13 @@ A simple TUI tool to get you a wordcount in a PDF, allowing you to exclude/inclu
 ### Installation
 #### Pre-requisites
 Using `pipx` to install. If you don't already have that:
-`sudo apt install pipx`
-or on windows:
-`python -m pip install --user pipx`
+`sudo apt install pipx` <br>
+or on windows: <br>
+`python -m pip install --user pipx` <br>
 `python -m pipx ensurepath`<- restart terminal after this one
 
 #### install pdfwc
-`git clone https://github.com/jwhogg/pdfwc --depth=1`
+`git clone https://github.com/jwhogg/pdfwc --depth=1` <br>
 `pipx install ./pdfwc/pdfwc`
 
 ### Usage
