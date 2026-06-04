@@ -1,0 +1,19 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pdfwc"
+version = "0.1.0"
+description = "Interactive TUI word counter for PDF sections"
+requires-python = ">=3.10"
+dependencies = [
+    "pymupdf>=1.23",
+    "textual>=0.60",
+]
+
+[project.scripts]
+pdfwc = "pdfwc.__main__:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["pdfwc"]
